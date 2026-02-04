@@ -22,6 +22,7 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
+  
 }
 
 /* HEADER */
@@ -29,7 +30,7 @@ body {
     
   border-bottom: 1px solid #eee;
   padding: 20px 0;
-  height: 200px;
+  height: 300px;
 }
 
 .header-content {
@@ -40,9 +41,14 @@ body {
 }
 
 
+
+
 .header-content > .left-side{
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 50px;
 }
 
 .header-content img{
@@ -80,9 +86,10 @@ body {
   text-align: center;
 }
 
-.hero-logo {
-  width: 260px;
+.hero img {
+  width: 150px;
   margin-bottom: 30px;
+ 
 }
 
 .hero h2 {
@@ -114,10 +121,15 @@ body {
 
 /* PRODUCTS */
 .products {
-    
+  
   padding: 120px 0;
   background: #fff;
 }
+
+.container + .container {
+  margin-top: 60px; /* o el espacio que quieras */
+}
+
 
 .section-title {
   text-align: center;
@@ -132,7 +144,7 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px;
+  gap: 100px;
 }
 
 /* CARD */
@@ -177,7 +189,7 @@ body {
 }
 
 .price {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 600;
   color: #FFDAB9;
   letter-spacing: 0.3px;
