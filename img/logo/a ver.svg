@@ -1,0 +1,36 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Liabloom Flowers">
+  <style>
+    .title { font-family: serif; font-size: 40px; fill: #f7e6e6; letter-spacing: 4px; }
+    .flower-stem { stroke: #f7e6e6; stroke-width: 2; fill: none; }
+    .flower-petal { fill: #f7e6e6; stroke: #d9a9a9; stroke-width: 1; }
+    .script { font-family: 'Segoe Script', cursive; font-size: 24px; fill: #f7e6e6; }
+    .subtitle { font-family: sans-serif; font-size: 16px; fill: #f7e6e6; letter-spacing: 3px; }
+    svg { background: transparent; }
+  </style>
+
+  <!-- Fondo transparente, no lo dibujamos -->
+
+  <!-- Texto superior -->
+  <text x="200" y="70" text-anchor="middle" class="title">LIA BLOOM</text>
+
+  <!-- Flor simple -->
+  <g transform="translate(200, 200)">
+    <!-- pétalos -->
+    <ellipse class="flower-petal" cx="0" cy="-40" rx="30" ry="45"></ellipse>
+    <ellipse class="flower-petal" cx="25" cy="-15" rx="20" ry="35" transform="rotate(40)"></ellipse>
+    <ellipse class="flower-petal" cx="-25" cy="-15" rx="20" ry="35" transform="rotate(-40)"></ellipse>
+    <ellipse class="flower-petal" cx="0" cy="20" rx="30" ry="20"></ellipse>
+    <!-- centro -->
+    <circle cx="0" cy="-5" r="10" fill="#d9a9a9"></circle>
+    <!-- tallo -->
+    <line class="flower-stem" x1="0" y1="20" x2="0" y2="120"></line>
+    <!-- hoja -->
+    <path class="flower-stem" d="M0,60 q40 20 0 40"></path>
+  </g>
+
+  <!-- Texto cursiva -->
+  <text x="200" y="370" text-anchor="middle" class="script">liabloom-flowers</text>
+
+  <!-- Texto inferior -->
+  <text x="200" y="410" text-anchor="middle" class="subtitle">FLOWER &amp; GIFT SHOP</text>
+</svg>
